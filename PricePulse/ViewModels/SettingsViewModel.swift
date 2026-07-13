@@ -19,7 +19,7 @@ final class SettingsViewModel {
     }
 
     func openSystemSettings() {
-        guard let url = URL(string: UIApplicationOpenSettingsURLString) else { return }
+        guard let url = URL(string: UIApplication.openSettingsURLString) else { return }
         UIApplication.shared.open(url)
     }
 }
