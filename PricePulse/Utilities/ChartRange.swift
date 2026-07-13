@@ -1,6 +1,6 @@
 import Foundation
 
-enum ChartRange: String, CaseIterable, Identifiable {
+enum ChartRange: String, CaseIterable, Identifiable, Hashable {
     case sevenDays
     case thirtyDays
     case ninetyDays

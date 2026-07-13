@@ -1,6 +1,6 @@
 import Foundation
 
-enum SortOption: String, CaseIterable, Identifiable {
+enum SortOption: String, CaseIterable, Identifiable, Hashable {
     case recentlyUpdated
     case newest
     case oldest
@@ -39,7 +39,7 @@ enum SortOption: String, CaseIterable, Identifiable {
     }
 }
 
-enum FilterOption: String, CaseIterable, Identifiable {
+enum FilterOption: String, CaseIterable, Identifiable, Hashable {
     case all
     case onSale
     case priceIncreased

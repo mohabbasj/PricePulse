@@ -1,6 +1,6 @@
 import SwiftUI
 
-enum Availability: String, Codable, CaseIterable, Identifiable, Sendable {
+enum Availability: String, Codable, CaseIterable, Identifiable, Hashable, Sendable {
     case inStock
     case outOfStock
     case unknown
