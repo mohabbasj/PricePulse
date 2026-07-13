@@ -1,5 +1,6 @@
 import Foundation
 
+@MainActor
 enum DateFormatters {
     static let relative: RelativeDateTimeFormatter = {
         let formatter = RelativeDateTimeFormatter()
