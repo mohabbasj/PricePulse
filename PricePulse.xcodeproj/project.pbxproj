@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000001004 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001003 /* AppDelegate.swift */; };
+		000000000000000000001006 /* DeepLinkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001005 /* DeepLinkRouter.swift */; };
+		000000000000000000001008 /* PricePulseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001007 /* PricePulseApp.swift */; };
+		00000000000000000000100A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001009 /* RootView.swift */; };
+		00000000000000000000100D /* AvailabilityBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000100C /* AvailabilityBadge.swift */; };
+		00000000000000000000100F /* DashboardStatsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000100E /* DashboardStatsHeader.swift */; };
+		000000000000000000001011 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001010 /* EmptyStateView.swift */; };
+		000000000000000000001013 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001012 /* LoadingView.swift */; };
+		000000000000000000001015 /* PriceChangeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001014 /* PriceChangeBadge.swift */; };
+		000000000000000000001017 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001016 /* ProductCardView.swift */; };
+		000000000000000000001019 /* ProductImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001018 /* ProductImageView.swift */; };
+		00000000000000000000101B /* SortFilterMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000101A /* SortFilterMenu.swift */; };
+		00000000000000000000101D /* StatCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000101C /* StatCardView.swift */; };
+		000000000000000000001020 /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000101F /* Color+Theme.swift */; };
+		000000000000000000001022 /* Decimal+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001021 /* Decimal+Currency.swift */; };
+		000000000000000000001024 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001023 /* View+Extensions.swift */; };
+		000000000000000000001027 /* Availability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001026 /* Availability.swift */; };
+		000000000000000000001029 /* AvailabilityHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001028 /* AvailabilityHistory.swift */; };
+		00000000000000000000102B /* PriceHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000102A /* PriceHistory.swift */; };
+		00000000000000000000102D /* ProductScrapingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000102C /* ProductScrapingError.swift */; };
+		00000000000000000000102F /* ScrapedProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000102E /* ScrapedProduct.swift */; };
+		000000000000000000001031 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001030 /* Store.swift */; };
+		000000000000000000001033 /* TrackedProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001032 /* TrackedProduct.swift */; };
+		000000000000000000001036 /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001035 /* NotificationDelegate.swift */; };
+		000000000000000000001038 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001037 /* NotificationManager.swift */; };
+		00000000000000000000103B /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000103A /* PersistenceController.swift */; };
+		000000000000000000001044 /* AdidasScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001043 /* AdidasScraper.swift */; };
+		000000000000000000001046 /* AmazonScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001045 /* AmazonScraper.swift */; };
+		000000000000000000001048 /* AppleScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001047 /* AppleScraper.swift */; };
+		00000000000000000000104A /* BestBuyScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001049 /* BestBuyScraper.swift */; };
+		00000000000000000000104C /* GenericScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000104B /* GenericScraper.swift */; };
+		00000000000000000000104E /* HTMLDocumentLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000104D /* HTMLDocumentLoader.swift */; };
+		000000000000000000001050 /* HTMLFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000104F /* HTMLFetching.swift */; };
+		000000000000000000001052 /* NikeScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001051 /* NikeScraper.swift */; };
+		000000000000000000001054 /* ProductScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001053 /* ProductScraper.swift */; };
+		000000000000000000001056 /* ScraperRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001055 /* ScraperRegistry.swift */; };
+		000000000000000000001058 /* ScraperUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001057 /* ScraperUtilities.swift */; };
+		00000000000000000000105A /* SelectorScrapingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001059 /* SelectorScrapingEngine.swift */; };
+		00000000000000000000105C /* WebViewHTMLFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000105B /* WebViewHTMLFetcher.swift */; };
+		00000000000000000000105F /* BackgroundTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000105E /* BackgroundTaskManager.swift */; };
+		000000000000000000001061 /* ProductMonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001060 /* ProductMonitorService.swift */; };
+		000000000000000000001064 /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001063 /* AppLogger.swift */; };
+		000000000000000000001066 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001065 /* AppSettings.swift */; };
+		000000000000000000001068 /* ChartRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001067 /* ChartRange.swift */; };
+		00000000000000000000106A /* DashboardStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001069 /* DashboardStats.swift */; };
+		00000000000000000000106C /* DateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000106B /* DateFormatters.swift */; };
+		00000000000000000000106E /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000106D /* HapticManager.swift */; };
+		000000000000000000001070 /* SortFilterOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000106F /* SortFilterOptions.swift */; };
+		000000000000000000001073 /* AddProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001072 /* AddProductViewModel.swift */; };
+		000000000000000000001075 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001074 /* DashboardViewModel.swift */; };
+		000000000000000000001077 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001076 /* ProductDetailViewModel.swift */; };
+		000000000000000000001079 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001078 /* SettingsViewModel.swift */; };
+		00000000000000000000107D /* AddProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000107C /* AddProductView.swift */; };
+		00000000000000000000107F /* ProductPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000107E /* ProductPreviewView.swift */; };
+		000000000000000000001082 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001081 /* DashboardView.swift */; };
+		000000000000000000001085 /* PriceHistoryChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001084 /* PriceHistoryChartView.swift */; };
+		000000000000000000001087 /* PriceTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001086 /* PriceTimelineView.swift */; };
+		000000000000000000001089 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001088 /* ProductDetailView.swift */; };
+		00000000000000000000108C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000108B /* SettingsView.swift */; };
+		00000000000000000000103E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000103D /* Assets.xcassets */; };
+		000000000000000000001041 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001040 /* LaunchScreen.storyboard */; };
+		00000000000000000000109E /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 00000000000000000000109D /* SwiftSoup */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000000000000000000001091 /* PricePulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PricePulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000001003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate.swift"; sourceTree = "<group>"; };
+		000000000000000000001005 /* DeepLinkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeepLinkRouter.swift"; sourceTree = "<group>"; };
+		000000000000000000001007 /* PricePulseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PricePulseApp.swift"; sourceTree = "<group>"; };
+		000000000000000000001009 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootView.swift"; sourceTree = "<group>"; };
+		00000000000000000000100C /* AvailabilityBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AvailabilityBadge.swift"; sourceTree = "<group>"; };
+		00000000000000000000100E /* DashboardStatsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardStatsHeader.swift"; sourceTree = "<group>"; };
+		000000000000000000001010 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmptyStateView.swift"; sourceTree = "<group>"; };
+		000000000000000000001012 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoadingView.swift"; sourceTree = "<group>"; };
+		000000000000000000001014 /* PriceChangeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PriceChangeBadge.swift"; sourceTree = "<group>"; };
+		000000000000000000001016 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductCardView.swift"; sourceTree = "<group>"; };
+		000000000000000000001018 /* ProductImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductImageView.swift"; sourceTree = "<group>"; };
+		00000000000000000000101A /* SortFilterMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SortFilterMenu.swift"; sourceTree = "<group>"; };
+		00000000000000000000101C /* StatCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StatCardView.swift"; sourceTree = "<group>"; };
+		00000000000000000000101F /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
+		000000000000000000001021 /* Decimal+Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Currency.swift"; sourceTree = "<group>"; };
+		000000000000000000001023 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		000000000000000000001026 /* Availability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Availability.swift"; sourceTree = "<group>"; };
+		000000000000000000001028 /* AvailabilityHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AvailabilityHistory.swift"; sourceTree = "<group>"; };
+		00000000000000000000102A /* PriceHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PriceHistory.swift"; sourceTree = "<group>"; };
+		00000000000000000000102C /* ProductScrapingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductScrapingError.swift"; sourceTree = "<group>"; };
+		00000000000000000000102E /* ScrapedProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScrapedProduct.swift"; sourceTree = "<group>"; };
+		000000000000000000001030 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store.swift"; sourceTree = "<group>"; };
+		000000000000000000001032 /* TrackedProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrackedProduct.swift"; sourceTree = "<group>"; };
+		000000000000000000001035 /* NotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationDelegate.swift"; sourceTree = "<group>"; };
+		000000000000000000001037 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationManager.swift"; sourceTree = "<group>"; };
+		00000000000000000000103A /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersistenceController.swift"; sourceTree = "<group>"; };
+		00000000000000000000103D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets.xcassets"; sourceTree = "<group>"; };
+		00000000000000000000103F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info.plist"; sourceTree = "<group>"; };
+		000000000000000000001040 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		000000000000000000001043 /* AdidasScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AdidasScraper.swift"; sourceTree = "<group>"; };
+		000000000000000000001045 /* AmazonScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AmazonScraper.swift"; sourceTree = "<group>"; };
+		000000000000000000001047 /* AppleScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppleScraper.swift"; sourceTree = "<group>"; };
+		000000000000000000001049 /* BestBuyScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BestBuyScraper.swift"; sourceTree = "<group>"; };
+		00000000000000000000104B /* GenericScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GenericScraper.swift"; sourceTree = "<group>"; };
+		00000000000000000000104D /* HTMLDocumentLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTMLDocumentLoader.swift"; sourceTree = "<group>"; };
+		00000000000000000000104F /* HTMLFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTMLFetching.swift"; sourceTree = "<group>"; };
+		000000000000000000001051 /* NikeScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NikeScraper.swift"; sourceTree = "<group>"; };
+		000000000000000000001053 /* ProductScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductScraper.swift"; sourceTree = "<group>"; };
+		000000000000000000001055 /* ScraperRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScraperRegistry.swift"; sourceTree = "<group>"; };
+		000000000000000000001057 /* ScraperUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScraperUtilities.swift"; sourceTree = "<group>"; };
+		000000000000000000001059 /* SelectorScrapingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectorScrapingEngine.swift"; sourceTree = "<group>"; };
+		00000000000000000000105B /* WebViewHTMLFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebViewHTMLFetcher.swift"; sourceTree = "<group>"; };
+		00000000000000000000105E /* BackgroundTaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BackgroundTaskManager.swift"; sourceTree = "<group>"; };
+		000000000000000000001060 /* ProductMonitorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductMonitorService.swift"; sourceTree = "<group>"; };
+		000000000000000000001063 /* AppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppLogger.swift"; sourceTree = "<group>"; };
+		000000000000000000001065 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppSettings.swift"; sourceTree = "<group>"; };
+		000000000000000000001067 /* ChartRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChartRange.swift"; sourceTree = "<group>"; };
+		000000000000000000001069 /* DashboardStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardStats.swift"; sourceTree = "<group>"; };
+		00000000000000000000106B /* DateFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatters.swift"; sourceTree = "<group>"; };
+		00000000000000000000106D /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HapticManager.swift"; sourceTree = "<group>"; };
+		00000000000000000000106F /* SortFilterOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SortFilterOptions.swift"; sourceTree = "<group>"; };
+		000000000000000000001072 /* AddProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddProductViewModel.swift"; sourceTree = "<group>"; };
+		000000000000000000001074 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardViewModel.swift"; sourceTree = "<group>"; };
+		000000000000000000001076 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductDetailViewModel.swift"; sourceTree = "<group>"; };
+		000000000000000000001078 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewModel.swift"; sourceTree = "<group>"; };
+		00000000000000000000107C /* AddProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddProductView.swift"; sourceTree = "<group>"; };
+		00000000000000000000107E /* ProductPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductPreviewView.swift"; sourceTree = "<group>"; };
+		000000000000000000001081 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardView.swift"; sourceTree = "<group>"; };
+		000000000000000000001084 /* PriceHistoryChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PriceHistoryChartView.swift"; sourceTree = "<group>"; };
+		000000000000000000001086 /* PriceTimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PriceTimelineView.swift"; sourceTree = "<group>"; };
+		000000000000000000001088 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductDetailView.swift"; sourceTree = "<group>"; };
+		00000000000000000000108B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsView.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00000000000000000000109B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00000000000000000000109E /* SwiftSoup in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00000000000000000000108F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000001091 /* PricePulse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000000000000001090 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00000000000000000000108E = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000001001 /* PricePulse */,
+				00000000000000000000108F /* Products */,
+				000000000000000000001090 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000001001 /* PricePulse */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000001002 /* App */,
+				00000000000000000000100B /* Components */,
+				00000000000000000000101E /* Extensions */,
+				000000000000000000001025 /* Models */,
+				000000000000000000001034 /* Notifications */,
+				000000000000000000001039 /* Persistence */,
+				00000000000000000000103C /* Resources */,
+				000000000000000000001042 /* Scrapers */,
+				00000000000000000000105D /* Services */,
+				000000000000000000001062 /* Utilities */,
+				000000000000000000001071 /* ViewModels */,
+				00000000000000000000107A /* Views */,
+			);
+			path = "PricePulse";
+			sourceTree = "<group>";
+		};
+		000000000000000000001002 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000001003 /* AppDelegate.swift */,
+				000000000000000000001005 /* DeepLinkRouter.swift */,
+				000000000000000000001007 /* PricePulseApp.swift */,
+				000000000000000000001009 /* RootView.swift */,
+			);
+			path = "App";
+			sourceTree = "<group>";
+		};
+		00000000000000000000100B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000100C /* AvailabilityBadge.swift */,
+				00000000000000000000100E /* DashboardStatsHeader.swift */,
+				000000000000000000001010 /* EmptyStateView.swift */,
+				000000000000000000001012 /* LoadingView.swift */,
+				000000000000000000001014 /* PriceChangeBadge.swift */,
+				000000000000000000001016 /* ProductCardView.swift */,
+				000000000000000000001018 /* ProductImageView.swift */,
+				00000000000000000000101A /* SortFilterMenu.swift */,
+				00000000000000000000101C /* StatCardView.swift */,
+			);
+			path = "Components";
+			sourceTree = "<group>";
+		};
+		00000000000000000000101E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000101F /* Color+Theme.swift */,
+				000000000000000000001021 /* Decimal+Currency.swift */,
+				000000000000000000001023 /* View+Extensions.swift */,
+			);
+			path = "Extensions";
+			sourceTree = "<group>";
+		};
+		000000000000000000001025 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000001026 /* Availability.swift */,
+				000000000000000000001028 /* AvailabilityHistory.swift */,
+				00000000000000000000102A /* PriceHistory.swift */,
+				00000000000000000000102C /* ProductScrapingError.swift */,
+				00000000000000000000102E /* ScrapedProduct.swift */,
+				000000000000000000001030 /* Store.swift */,
+				000000000000000000001032 /* TrackedProduct.swift */,
+			);
+			path = "Models";
+			sourceTree = "<group>";
+		};
+		000000000000000000001034 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000001035 /* NotificationDelegate.swift */,
+				000000000000000000001037 /* NotificationManager.swift */,
+			);
+			path = "Notifications";
+			sourceTree = "<group>";
+		};
+		000000000000000000001039 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000103A /* PersistenceController.swift */,
+			);
+			path = "Persistence";
+			sourceTree = "<group>";
+		};
+		00000000000000000000103C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000103D /* Assets.xcassets */,
+				00000000000000000000103F /* Info.plist */,
+				000000000000000000001040 /* LaunchScreen.storyboard */,
+			);
+			path = "Resources";
+			sourceTree = "<group>";
+		};
+		000000000000000000001042 /* Scrapers */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000001043 /* AdidasScraper.swift */,
+				000000000000000000001045 /* AmazonScraper.swift */,
+				000000000000000000001047 /* AppleScraper.swift */,
+				000000000000000000001049 /* BestBuyScraper.swift */,
+				00000000000000000000104B /* GenericScraper.swift */,
+				00000000000000000000104D /* HTMLDocumentLoader.swift */,
+				00000000000000000000104F /* HTMLFetching.swift */,
+				000000000000000000001051 /* NikeScraper.swift */,
+				000000000000000000001053 /* ProductScraper.swift */,
+				000000000000000000001055 /* ScraperRegistry.swift */,
+				000000000000000000001057 /* ScraperUtilities.swift */,
+				000000000000000000001059 /* SelectorScrapingEngine.swift */,
+				00000000000000000000105B /* WebViewHTMLFetcher.swift */,
+			);
+			path = "Scrapers";
+			sourceTree = "<group>";
+		};
+		00000000000000000000105D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000105E /* BackgroundTaskManager.swift */,
+				000000000000000000001060 /* ProductMonitorService.swift */,
+			);
+			path = "Services";
+			sourceTree = "<group>";
+		};
+		000000000000000000001062 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000001063 /* AppLogger.swift */,
+				000000000000000000001065 /* AppSettings.swift */,
+				000000000000000000001067 /* ChartRange.swift */,
+				000000000000000000001069 /* DashboardStats.swift */,
+				00000000000000000000106B /* DateFormatters.swift */,
+				00000000000000000000106D /* HapticManager.swift */,
+				00000000000000000000106F /* SortFilterOptions.swift */,
+			);
+			path = "Utilities";
+			sourceTree = "<group>";
+		};
+		000000000000000000001071 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000001072 /* AddProductViewModel.swift */,
+				000000000000000000001074 /* DashboardViewModel.swift */,
+				000000000000000000001076 /* ProductDetailViewModel.swift */,
+				000000000000000000001078 /* SettingsViewModel.swift */,
+			);
+			path = "ViewModels";
+			sourceTree = "<group>";
+		};
+		00000000000000000000107A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000107B /* AddProduct */,
+				000000000000000000001080 /* Dashboard */,
+				000000000000000000001083 /* ProductDetails */,
+				00000000000000000000108A /* Settings */,
+			);
+			path = "Views";
+			sourceTree = "<group>";
+		};
+		00000000000000000000107B /* AddProduct */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000107C /* AddProductView.swift */,
+				00000000000000000000107E /* ProductPreviewView.swift */,
+			);
+			path = "AddProduct";
+			sourceTree = "<group>";
+		};
+		000000000000000000001080 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000001081 /* DashboardView.swift */,
+			);
+			path = "Dashboard";
+			sourceTree = "<group>";
+		};
+		000000000000000000001083 /* ProductDetails */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000001084 /* PriceHistoryChartView.swift */,
+				000000000000000000001086 /* PriceTimelineView.swift */,
+				000000000000000000001088 /* ProductDetailView.swift */,
+			);
+			path = "ProductDetails";
+			sourceTree = "<group>";
+		};
+		00000000000000000000108A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000108B /* SettingsView.swift */,
+			);
+			path = "Settings";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000001092 /* PricePulse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000001093 /* Build configuration list for PBXNativeTarget "PricePulse" */;
+			buildPhases = (
+				000000000000000000001099 /* Sources */,
+				00000000000000000000109B /* Frameworks */,
+				00000000000000000000109A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PricePulse;
+			packageProductDependencies = (
+				00000000000000000000109D /* SwiftSoup */,
+			);
+			productName = PricePulse;
+			productReference = 000000000000000000001091 /* PricePulse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00000000000000000000108D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					000000000000000000001092 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 000000000000000000001096 /* Build configuration list for PBXProject "PricePulse" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00000000000000000000108E;
+			productRefGroup = 00000000000000000000108F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000001092 /* PricePulse */,
+			);
+			packageReferences = (
+				00000000000000000000109C /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00000000000000000000109A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00000000000000000000103E /* Assets.xcassets in Resources */,
+				000000000000000000001041 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000001099 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000001004 /* AppDelegate.swift in Sources */,
+				000000000000000000001006 /* DeepLinkRouter.swift in Sources */,
+				000000000000000000001008 /* PricePulseApp.swift in Sources */,
+				00000000000000000000100A /* RootView.swift in Sources */,
+				00000000000000000000100D /* AvailabilityBadge.swift in Sources */,
+				00000000000000000000100F /* DashboardStatsHeader.swift in Sources */,
+				000000000000000000001011 /* EmptyStateView.swift in Sources */,
+				000000000000000000001013 /* LoadingView.swift in Sources */,
+				000000000000000000001015 /* PriceChangeBadge.swift in Sources */,
+				000000000000000000001017 /* ProductCardView.swift in Sources */,
+				000000000000000000001019 /* ProductImageView.swift in Sources */,
+				00000000000000000000101B /* SortFilterMenu.swift in Sources */,
+				00000000000000000000101D /* StatCardView.swift in Sources */,
+				000000000000000000001020 /* Color+Theme.swift in Sources */,
+				000000000000000000001022 /* Decimal+Currency.swift in Sources */,
+				000000000000000000001024 /* View+Extensions.swift in Sources */,
+				000000000000000000001027 /* Availability.swift in Sources */,
+				000000000000000000001029 /* AvailabilityHistory.swift in Sources */,
+				00000000000000000000102B /* PriceHistory.swift in Sources */,
+				00000000000000000000102D /* ProductScrapingError.swift in Sources */,
+				00000000000000000000102F /* ScrapedProduct.swift in Sources */,
+				000000000000000000001031 /* Store.swift in Sources */,
+				000000000000000000001033 /* TrackedProduct.swift in Sources */,
+				000000000000000000001036 /* NotificationDelegate.swift in Sources */,
+				000000000000000000001038 /* NotificationManager.swift in Sources */,
+				00000000000000000000103B /* PersistenceController.swift in Sources */,
+				000000000000000000001044 /* AdidasScraper.swift in Sources */,
+				000000000000000000001046 /* AmazonScraper.swift in Sources */,
+				000000000000000000001048 /* AppleScraper.swift in Sources */,
+				00000000000000000000104A /* BestBuyScraper.swift in Sources */,
+				00000000000000000000104C /* GenericScraper.swift in Sources */,
+				00000000000000000000104E /* HTMLDocumentLoader.swift in Sources */,
+				000000000000000000001050 /* HTMLFetching.swift in Sources */,
+				000000000000000000001052 /* NikeScraper.swift in Sources */,
+				000000000000000000001054 /* ProductScraper.swift in Sources */,
+				000000000000000000001056 /* ScraperRegistry.swift in Sources */,
+				000000000000000000001058 /* ScraperUtilities.swift in Sources */,
+				00000000000000000000105A /* SelectorScrapingEngine.swift in Sources */,
+				00000000000000000000105C /* WebViewHTMLFetcher.swift in Sources */,
+				00000000000000000000105F /* BackgroundTaskManager.swift in Sources */,
+				000000000000000000001061 /* ProductMonitorService.swift in Sources */,
+				000000000000000000001064 /* AppLogger.swift in Sources */,
+				000000000000000000001066 /* AppSettings.swift in Sources */,
+				000000000000000000001068 /* ChartRange.swift in Sources */,
+				00000000000000000000106A /* DashboardStats.swift in Sources */,
+				00000000000000000000106C /* DateFormatters.swift in Sources */,
+				00000000000000000000106E /* HapticManager.swift in Sources */,
+				000000000000000000001070 /* SortFilterOptions.swift in Sources */,
+				000000000000000000001073 /* AddProductViewModel.swift in Sources */,
+				000000000000000000001075 /* DashboardViewModel.swift in Sources */,
+				000000000000000000001077 /* ProductDetailViewModel.swift in Sources */,
+				000000000000000000001079 /* SettingsViewModel.swift in Sources */,
+				00000000000000000000107D /* AddProductView.swift in Sources */,
+				00000000000000000000107F /* ProductPreviewView.swift in Sources */,
+				000000000000000000001082 /* DashboardView.swift in Sources */,
+				000000000000000000001085 /* PriceHistoryChartView.swift in Sources */,
+				000000000000000000001087 /* PriceTimelineView.swift in Sources */,
+				000000000000000000001089 /* ProductDetailView.swift in Sources */,
+				00000000000000000000108C /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		000000000000000000001097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		000000000000000000001098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		000000000000000000001094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PricePulse/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pricepulse.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		000000000000000000001095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PricePulse/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pricepulse.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000000001096 /* Build configuration list for PBXProject "PricePulse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000001097 /* Debug */,
+				000000000000000000001098 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000001093 /* Build configuration list for PBXNativeTarget "PricePulse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000001094 /* Debug */,
+				000000000000000000001095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		00000000000000000000109C /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		00000000000000000000109D /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00000000000000000000109C /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 00000000000000000000108D /* Project object */;
+}
